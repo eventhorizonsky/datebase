@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="datebase:war">
+    <output-path>$PROJECT_DIR$/out/artifacts/datebase_war</output-path>
+    <root id="archive" name="datebase_war.war">
+      <element id="artifact" artifact-name="datebase:war exploded" />
+    </root>
+  </artifact>
+</component>

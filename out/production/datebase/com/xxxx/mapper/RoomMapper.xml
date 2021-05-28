@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--首先来解析namespace:命名空间，此属性用来映射mapper层接口。-->
+<mapper namespace="com.xxxx.mapper.RoomMapper" >
+    <!-- id:对应mapper层接口方法名parameterType: 指定输入参数类型-->
+    <!-- useGeneratedKeys=" true”把新增加的主键赋值到自己定义的keyProperty (id) 中-->
+    <insert id="Insertdata" parameterType="com.xxxx.entity.Room">
+        insert into room (risknumber,riskname,riskplace,risktype,riskclass,risklevel,principal,Floorprincipal,Householdleader,description1,Precautions1,frequency1,description2,Precautions2,frequency2,description3,Precautions3,frequency3,description4,Precautions4,frequency4,description5,Precautions5,frequency5,description6,Precautions6,frequency6,description7,Precautions7,frequency7,description8,Precautions8,frequency8,description9,Precautions9,frequency9,description10,Precautions10,frequency10)values(#{risknumber},#{riskname},#{riskplace},#{risktype},#{riskclass},#{risklevel},#{principal},#{Floorprincipal},#{Householdleader},#{description1},#{Precautions1},#{frequency1},#{description2},#{Precautions2},#{frequency2},#{description3},#{Precautions3},#{frequency3},#{description4},#{Precautions4},#{frequency4},#{description5},#{Precautions5},#{frequency5},#{description6},#{Precautions6},#{frequency6},#{description7},#{Precautions7},#{frequency7},#{description8},#{Precautions8},#{frequency8},#{description9},#{Precautions9},#{frequency9},#{description10},#{Precautions10},#{frequency10})
+    </insert>
+</mapper>
